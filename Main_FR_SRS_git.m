@@ -41,7 +41,7 @@ figure;imagesc(log(fa)); axis square; axis off
 
 % calculate k-vectors of the Fourier-transformed image
 
-fs = 1/0.045; % per µm, inverse of pixel size
+fs = 1/0.045; 
 k  = fs/2/(N/2).*R; 
 km = 5.5; % km is 2NA / lambda_pump + 2NA / lambda_stokes
 ind = double(k<km); % Step function to clip everything outside km to zero 
